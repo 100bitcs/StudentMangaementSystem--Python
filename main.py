@@ -52,3 +52,13 @@ class StudentManagementSystem:
                 print("Marks Updated Successfully !")
                 return
         print("Student Not Found! ")
+
+    def delete_student(self):
+        id = int(input("Enter  Student ID: "))
+        for i in self.students:
+            if i.id == id:
+                self.students.remove(i)
+                print("Student Deleted Successfully !")
+                return
+        print("Student Not Found !")
+        
