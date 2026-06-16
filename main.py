@@ -61,4 +61,14 @@ class StudentManagementSystem:
                 print("Student Deleted Successfully !")
                 return
         print("Student Not Found !")
-        
+
+    def display_topper(self):
+        if len(self.students)==0:
+            print("No Students Available! ")
+        else:
+            topper =self.students[0]
+            for i in self.students:
+                if topper.marks < i.marks:
+                    topper = i
+            print("\n Topper Details")
+            topper.display()
