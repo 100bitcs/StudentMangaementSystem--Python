@@ -32,3 +32,12 @@ class StudentManagementSystem:
             for i in self.students:
                 i.display()
     
+    def search_stu(self):
+        id = int(input("Enter Student ID to search: "))
+
+        for i in self.students:
+            if i.id == id:
+                print("Student Found! ")
+                i.display()
+                return
+        print("Student Not Found! ")
