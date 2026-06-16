@@ -41,3 +41,14 @@ class StudentManagementSystem:
                 i.display()
                 return
         print("Student Not Found! ")
+    
+    def update_marks(self):
+        id =int(input("Enter Student ID: "))
+
+        for i in self.students:
+            if i.id == id:
+                new_marks = float(input("Enter New marks: "))
+                i.marks = new_marks
+                print("Marks Updated Successfully !")
+                return
+        print("Student Not Found! ")
