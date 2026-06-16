@@ -31,3 +31,4 @@ class StudentManagementSystem:
         else:
             for i in self.students:
                 i.display()
+    
