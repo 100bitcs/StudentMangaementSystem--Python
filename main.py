@@ -28,3 +28,6 @@ class StudentManagementSystem:
     def view_students(self):
         if len(self.students) ==0:
             print("No Students Found")
+        else:
+            for i in self.students:
+                i.display()
